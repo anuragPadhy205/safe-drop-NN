@@ -1,0 +1,14 @@
+# PyTorch Core (Note: Conda handles hardware-specific binaries better, 
+# but these are the base packages required)
+torch
+torchvision
+
+# Image Processing & Arrays
+numpy
+opencv-python  # Installed via pip to avoid Mac Conda C++ Protobuf clashes
+
+# Visualization
+matplotlib
+
+# Intel MiDaS Dependencies
+timm
