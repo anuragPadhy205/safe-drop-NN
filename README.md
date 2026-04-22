@@ -2,7 +2,13 @@
 
 # AI Autonomous Landing Zone Analysis Model
 
-This project implements an AI-driven, autonomous drone landing zone selection system.  It utilizes an Artificial Neural Network (ANN) for semantic segmentation, monocular depth estimation, and a Spreading Activation Knowledge Graph to dynamically identify the safest and most optimal landing coordinates for a package drop.
+This project implements an AI-driven, autonomous drone landing zone selection system.  It utilizes an Artificial Neural Network (ANN) for semantic segmentation, monocular depth estimation, and a Spreading Activation Knowledge Graph to dynamically identify the safest and most optimal landing coordinates for a package drop. 
+
+The dataset used to train the ANN is https://cloud.tugraz.at/index.php/s/csxYfaKmie6LyqA 
+The file name is semantics_drone_dataset_semantics_v1.1.zip. Anaconda or Miniconda is also recommended for this project.
+
+
+<img width="1790" height="1102" alt="image" src="https://github.com/user-attachments/assets/e61a8067-b5d3-4037-baf0-57cbece2f4e0" />
 
 ## System Architecture
 
@@ -78,3 +84,6 @@ python3 src/main.py path/to/test_image.jpg 400 300
 *Outputs:*
 *  `output.jpg`: The original image overlaid with the optimal green bounding box and target coordinate.
 *  `output_analysis.jpg`: A 6-panel dashboard displaying the Original Image, Semantic Segmentation map, Depth Map, Safe Zone Mask, Best Placement, and a detailed Cost Breakdown.
+
+
+
