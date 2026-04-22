@@ -32,14 +32,14 @@ This project implements an AI-driven, autonomous drone landing zone selection sy
 *  `geometry.py`: Generates binary safe-zone masks, executes a rotational grid search for the footprint, performs Sobel roughness validation, and calculates the final normalized cost score.
 *  `knowledge_graph.py`: Implements the `think()` function for the 3-layer Spreading Activation graph, managing `SOURCE_TO_PROPERTY_EDGES` and `PROPERTY_TO_TERRAIN_EDGES` with capped penalty outputs.
 *  `semantic_brain.py`: Parses active mission traits from `mission_config.json` and samples interior points to classify the dominant terrain type for graph penalty lookup.
-*  `utils.py`: Contains helper routines for semantic color mapping and rendering the final 6-panel output dashboard[cite: 163, 164, 182].
+*  `utils.py`: Contains helper routines for semantic color mapping and rendering the final 6-panel output dashboard.
 *  `main.py`: The entry point and orchestration layer for the full inference pipeline.
 
 ---
 
 ## Installation & Setup
 
- This project uses `conda` for environment management and natively supports hardware acceleration across CUDA (Nvidia), MPS (Apple Silicon Mac), and CPU architectures[cite: 245].
+ This project uses `conda` for environment management and natively supports hardware acceleration across CUDA (Nvidia), MPS (Apple Silicon Mac), and CPU architectures.
 
 1.  **Create and activate the environment:**
     ```bash
